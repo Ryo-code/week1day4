@@ -1,11 +1,5 @@
-function logArrayElements(element, index, array) {
-  console.log('[' + index + ']');
-}
-
-// Notice that index 2 is skipped since there is no item at
-// that position in the array.
-[2, 5, , 9].forEach(logArrayElements);
-// logs:
-// a[0] = 2
-// a[1] = 5
-// a[3] = 9
+var numbers = [1, 2, 3, 4, 5, 7, 10, 14, 17, 18];
+var evens = numbers.filter(function(num) {
+  return (num % 2 == 0);
+});
+console.log("Subset of even numbers:", evens);
